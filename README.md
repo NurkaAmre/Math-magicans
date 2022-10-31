@@ -18,7 +18,7 @@ Read a random math-related quote.
 
 ## Live Demo (if available)
 
-[Live Demo Link]
+[Live Demo Link] not available yet
 
 ## Getting Started
 
@@ -59,8 +59,8 @@ Give a ⭐️ if you like this project!
 
 ### Code Splitting
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- Thanks for Microverse 
+- And thankfull for Didier and my coding partner...
 - etc
 
 ## 📝 License
