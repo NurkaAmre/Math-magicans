@@ -2,20 +2,23 @@
 
 # Math Magicians
 
- Description the project.
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+
+Make simple calculations.
+Read a random math-related quote.
 
 ## Available Scripts
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML, CSS, JS
+- react 
+- Linters
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link]
 
 ## Getting Started
 
