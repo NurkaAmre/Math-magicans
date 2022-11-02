@@ -29,6 +29,7 @@ body {
 }
 
 .wrapper {
+  padding: 3px;
   display: grid;
   height: 100%;
   width: 100%;
@@ -43,14 +44,25 @@ body {
   cursor: pointer;
   font-weight: bold;
   border: 1px solid rgb(177, 174, 172);
+  padding: 1rem;
 }
 
 .orange {
   background-color: rgb(218, 119, 27);
 }
 
+.orange:hover {
+  background-color: rgba(228, 155, 19, 0.425);
+  border: 3px solid rgb(247, 245, 244);
+}
+
 .grey {
   background-color: rgb(187, 187, 181);
+}
+
+.grey:hover {
+  border: 3px solid #fff;
+  background-color: rgb(149, 154, 154);
 }
 
 .span {
