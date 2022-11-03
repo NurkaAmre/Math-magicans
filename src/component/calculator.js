@@ -1,48 +1,46 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-/* eslint-disable */
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {total: 0, next: null, operation: null}
-  }
-
-  handleClick = (event) => {
-    const buttonName = event.target.innerText;
-    const result = calculate(this.state, buttonName);
-    this.setState(result)
-  }
-  
-  render() {
-    const {total, next, operation } = this.state;
-    return (
-      <div className="container">
-        <div className="wrapper">
-          <button className="display">{total}{operation}{next}</button>
-          <button className="btn grey" onClick={this.handleClick}>AC</button>
-          <button className="btn grey" onClick={this.handleClick}>+/-</button>
-          <button className="btn grey" onClick={this.handleClick}>%</button>
-          <button className="btn orange" onClick={this.handleClick}>/</button>
-          <button className="btn grey" onClick={this.handleClick}>7</button>
-          <button className="btn grey" onClick={this.handleClick}>8</button>
-          <button className="btn grey" onClick={this.handleClick}>9</button>
-          <button className="btn orange" onClick={this.handleClick}>x</button>
-          <button className="btn grey" onClick={this.handleClick}>4</button>
-          <button className="btn grey" onClick={this.handleClick}>5</button>
-          <button className="btn grey" onClick={this.handleClick}>6</button>
-          <button className="btn orange" onClick={this.handleClick}>-</button>
-          <button className="btn grey" onClick={this.handleClick}>1</button>
-          <button className="btn grey" onClick={this.handleClick}>2</button>
-          <button className="btn grey" onClick={this.handleClick}>3</button>
-          <button className="btn orange" onClick={this.handleClick}>+</button>
-          <button className="btn grey span" onClick={this.handleClick}>0</button>
-          <button className="btn grey" onClick={this.handleClick}>.</button>
-          <button className="btn orange" onClick={this.handleClick}>=</button>
-        </div>
-      </div>
-    );
-  }
+function handleClick(event, state, setter) {
+  const buttonName = event.target.innerText;
+  const result = calculate(state, buttonName);
+  setter(result);
 }
+
+const Calculator = () => {
+  const [state, setter] = useState({ total: 0, operation: null, next: null });
+  const { total, next, operation } = state;
+
+  return (
+    <div className="container">
+      <div className="wrapper">
+        <button className="display" type="button">
+          {total}
+          {operation}
+          {next}
+        </button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">AC</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">+/-</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">%</button>
+        <button className="btn orange" onClick={(event) => handleClick(event, state, setter)} type="button">/</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">7</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">8</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">9</button>
+        <button className="btn orange" onClick={(event) => handleClick(event, state, setter)} type="button">x</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">4</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">5</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">6</button>
+        <button className="btn orange" onClick={(event) => handleClick(event, state, setter)} type="button">-</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">1</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">2</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">3</button>
+        <button className="btn orange" onClick={(event) => handleClick(event, state, setter)} type="button">+</button>
+        <button className="btn grey span" onClick={(event) => handleClick(event, state, setter)} type="button">0</button>
+        <button className="btn grey" onClick={(event) => handleClick(event, state, setter)} type="button">.</button>
+        <button className="btn orange" onClick={(event) => handleClick(event, state, setter)} type="button">=</button>
+      </div>
+    </div>
+  );
+};
 
 export default Calculator;

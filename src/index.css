@@ -20,6 +20,7 @@ body {
   overflow: hidden;
   background-color: grey;
   text-align: end;
+  letter-spacing: 5px;
 }
 
 .container {
