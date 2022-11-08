@@ -1,0 +1,10 @@
+.calc {
+  display: flex;
+  gap: 20%;
+}
+
+.lets {
+  font-size: 3rem;
+  margin-top: 3%;
+  padding-left: 10px;
+}

@@ -1,0 +1,12 @@
+.quotes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(112, 58, 106);
+  font-size: 2rem;
+  margin-top: 8%;
+  padding-inline-start: 5%;
+  padding-inline-end: 5%;
+}
