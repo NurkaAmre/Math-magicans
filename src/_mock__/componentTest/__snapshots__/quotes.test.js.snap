@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote should render quotes 1`] = `
+<div>
+  <quotes />
+</div>
+`;
+
+exports[`Quotes should render quotes 1`] = `
+<div>
+  <div
+    class="quotes"
+  >
+    <q>
+      Mathematic is not about numbers, equations, computations, or algorithms: it is about understanding.
+    </q>
+    <h4>
+      William Paul Thurston
+    </h4>
+  </div>
+</div>
+`;
