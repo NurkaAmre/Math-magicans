@@ -61,7 +61,7 @@ Give a ⭐️ if you like this project!
 
 - Thanks for Microverse 
 - And thankfull for Didier and my coding partner...
-- etc
+- etc blah blah
 
 ## 📝 License
 
