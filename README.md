@@ -18,7 +18,7 @@ Read a random math-related quote.
 
 ## Live Demo (if available)
 
-[Live Demo Link] not available yet
+[https://mathnur.netlify.app] 
 
 ## Getting Started
 
