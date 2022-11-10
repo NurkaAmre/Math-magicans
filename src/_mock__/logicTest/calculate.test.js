@@ -1,4 +1,3 @@
-import { render } from '@testing-library/react'
 import calculate from '../../logic/calculate'
 
 describe('calculate', () => {
